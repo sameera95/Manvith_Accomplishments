@@ -1,0 +1,49 @@
+/* Simple Wix-like timeline style */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&family=Playfair+Display:wght@400;700&display=swap');
+:root{
+  --accent:#0f6cf2;
+  --muted:#6b7280;
+  --bg:#f7f7fb;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;font-family:Montserrat,system-ui,Arial,sans-serif; background:var(--bg); color:#111;
+}
+.header{
+  background: linear-gradient(90deg, rgba(15,108,242,0.95), rgba(32,199,255,0.9));
+  color:#fff; padding:48px 20px; text-align:center; position:relative; overflow:hidden;
+}
+.header .container{max-width:1100px;margin:0 auto}
+.header h1{font-family:'Playfair Display',serif;font-weight:700;margin:0 0 8px;font-size:40px}
+.header p.lead{opacity:0.95;margin:0 0 18px;color:rgba(255,255,255,0.95)}
+.header .cta{background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.18);padding:10px 18px;border-radius:999px;color:#fff;text-decoration:none;font-weight:600}
+.timeline-wrap{max-width:1100px;margin:40px auto;padding:0 20px}
+.timeline{position:relative;padding:40px 0}
+.timeline:before{content:'';position:absolute;left:50%;top:0;bottom:0;width:4px;background:linear-gradient(#ddd,#eee);transform:translateX(-50%);border-radius:2px}
+.item{position:relative;width:50%;padding:20px 40px}
+.item .card{background:var(--card);border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.08);overflow:hidden}
+.item .card .media{height:220px;background-size:cover;background-position:center}
+.item .card .content{padding:18px}
+.item .meta{color:var(--muted);font-size:13px;margin-bottom:6px}
+.item h3{margin:0 0 8px;font-size:20px}
+.item p{margin:0;color:#333}
+.item.left{left:0;text-align:right;padding-right:60px}
+.item.right{left:50%;padding-left:60px}
+.item.left .card{margin-left:auto}
+.item .dot{position:absolute;left:50%;transform:translateX(-50%);width:18px;height:18px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 6px rgba(15,108,242,0.08);top:32px}
+.item.left .dot{top:46px}
+.item.right .dot{top:46px}
+@media(max-width:900px){
+  .item{width:100%;padding:12px 0}
+  .item.left{left:0;padding-right:0;text-align:left}
+  .item.right{left:0;padding-left:0}
+  .timeline:before{left:20px}
+  .item .dot{left:20px;transform:none}
+  .item .card .media{height:160px}
+}
+.footer{max-width:1100px;margin:40px auto;padding:20px;text-align:center;color:var(--muted)}
+/* small helpers */
+.container{padding:0 20px}
+.hero-image{position:absolute;right:20px;top:-30px;opacity:0.12;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle at 30% 30%, rgba(255,255,255,0.18), rgba(255,255,255,0));pointer-events:none}

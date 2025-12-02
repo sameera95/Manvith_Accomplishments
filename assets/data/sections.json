@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Project Kickoff",
+    "date": "January 2024",
+    "subtitle": "Where it all began",
+    "description": "We started the initiative with a cross-functional team and an ambitious roadmap. Early wins included a validated prototype and stakeholder alignment.",
+    "image": "https://picsum.photos/id/1015/1200/700"
+  },
+  {
+    "id": 2,
+    "title": "Design & Iteration",
+    "date": "April 2024",
+    "subtitle": "User-centered design",
+    "description": "Multiple design sprints led to a refined UX and accessible interactions; we tested prototypes with target users and incorporated feedback.",
+    "image": "https://picsum.photos/id/1021/1200/700"
+  },
+  {
+    "id": 3,
+    "title": "MVP Launch",
+    "date": "August 2024",
+    "subtitle": "First public release",
+    "description": "The MVP launched with core features and received positive feedback; we monitored metrics and prepared the backlog for the next phase.",
+    "image": "https://picsum.photos/id/1035/1200/700"
+  },
+  {
+    "id": 4,
+    "title": "Scale & Growth",
+    "date": "December 2024",
+    "subtitle": "Expanding reach",
+    "description": "Scaled infrastructure, improved performance, and grew the user base through marketing and partnerships.",
+    "image": "https://picsum.photos/id/1043/1200/700"
+  },
+  {
+    "id": 5,
+    "title": "Achievements",
+    "date": "June 2025",
+    "subtitle": "Milestones unlocked",
+    "description": "Reached product-market fit indicators, exceeded engagement goals, and received recognition across the industry.",
+    "image": "https://picsum.photos/id/1056/1200/700"
+  }
+]
