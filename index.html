@@ -30,12 +30,14 @@
   </header>
 
   <main class="timeline-wrap">
-    <!-- Video banner replaces the welcome section. Autoplays muted and loops. -->
+    <!-- Video banner replaces the welcome section. YouTube iframe autoplays muted and loops. -->
     <section class="video-banner">
-      <video id="banner-video" class="banner-video" autoplay muted loop playsinline preload="auto" title="Manvith 10th Birthday">
-        <source src="assets/data/video/Manvith10thBday.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <iframe id="banner-video" class="banner-video" 
+        title="Manvith 10th Birthday"
+        src="https://www.youtube.com/embed/LK-sEkeZK5A"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        allowfullscreen>
+      </iframe>
       <div class="play-button-overlay" id="play-overlay">
         <button class="play-button" id="play-btn" aria-label="Toggle video sound" title="Click to unmute">
           <!-- Unmute/speaker icon (shown when muted) -->
@@ -58,15 +60,16 @@
   <!-- Video sound control script -->
   <script>
     document.addEventListener('DOMContentLoaded', ()=>{
-      const video = document.getElementById('banner-video');
       const playBtn = document.getElementById('play-btn');
       const unmuteIcon = document.getElementById('unmute-icon');
       const muteIcon = document.getElementById('mute-icon');
 
-      if(!playBtn || !video) return;
+      if(!playBtn) return;
+
+      let isAudioActive = false;
 
       function updateIcon(){
-        if(video.muted){
+        if(!isAudioActive){
           unmuteIcon.style.display = 'block';
           muteIcon.style.display = 'none';
           playBtn.title = 'Click to unmute';
@@ -79,18 +82,11 @@
 
       playBtn.addEventListener('click', (e)=>{
         e.stopPropagation();
-        video.muted = !video.muted;
-        video.play();
+        isAudioActive = !isAudioActive;
         updateIcon();
       });
 
-      // Also allow clicking the video to toggle mute
-      video.addEventListener('click', ()=>{
-        video.muted = !video.muted;
-        updateIcon();
-      });
-
-      // Initialize icon state
+      // Initialize icon state (starts muted)
       updateIcon();
     });
   </script>

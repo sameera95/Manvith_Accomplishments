@@ -1,47 +1,92 @@
 [
   {
     "id": 1,
-    "title": "Project Kickoff",
-    "date": "January 2024",
-    "subtitle": "Where it all began",
-    "description": "We started the initiative with a cross-functional team and an ambitious roadmap. Early wins included a validated prototype and stakeholder alignment.",
-    "image": "https://picsum.photos/id/1015/1200/700",
+    "title": "One Year Old",
+    "date": "Age 1",
+    "subtitle": "Our little bundle of joy",
+    "description": "What a beautiful journey it has been! Our baby Manvith, just one year old, has filled our hearts with endless love and precious moments. Every smile, every giggle, and every milestone is a treasure we hold dear. From those tiny fingers to the first steps, this year has been pure magic.",
+    "image": "assets/data/photos/timeline/1.JPG",
     "category": "timeline"
   },
   {
     "id": 2,
-    "title": "Design & Iteration",
-    "date": "April 2024",
-    "subtitle": "User-centered design",
-    "description": "Multiple design sprints led to a refined UX and accessible interactions; we tested prototypes with target users and incorporated feedback.",
-    "image": "https://picsum.photos/id/1021/1200/700",
+    "title": "Two Years Old",
+    "date": "Age 2",
+    "subtitle": "Growing and discovering",
+    "description": "Two beautiful years have passed! Our Manvith is becoming more playful and curious about the world around them. With every new word, every new game, and every hug, we see our little one blossoming into a wonderful personality. Your laughter is our greatest joy!",
+    "image": "assets/data/photos/timeline/2.JPG",
     "category": "timeline"
   },
   {
     "id": 3,
-    "title": "MVP Launch",
-    "date": "August 2024",
-    "subtitle": "First public release",
-    "description": "The MVP launched with core features and received positive feedback; we monitored metrics and prepared the backlog for the next phase.",
-    "image": "https://picsum.photos/id/1035/1200/700",
+    "title": "Three Years Old",
+    "date": "Age 3",
+    "subtitle": "A spark of joy",
+    "description": "Three years of love, laughter, and countless memories! Our dear Manvith is now full of imagination and energy. You bring so much brightness and happiness into our lives. Every question you ask, every story you tell, and every moment of mischief reminds us how blessed we truly are.",
+    "image": "assets/data/photos/timeline/3.JPG",
     "category": "timeline"
   },
   {
     "id": 4,
-    "title": "Scale & Growth",
-    "date": "December 2024",
-    "subtitle": "Expanding reach",
-    "description": "Scaled infrastructure, improved performance, and grew the user base through marketing and partnerships.",
-    "image": "https://picsum.photos/id/1043/1200/700",
+    "title": "Four Years Old",
+    "date": "Age 4",
+    "subtitle": "Our little star shining bright",
+    "description": "Our sweet Manvith is now four! You have grown into such a kind-hearted and creative soul. We watch with admiration as you explore, learn, and embrace life with pure innocence and joy. Every achievement, no matter how small, fills our hearts with pride. You are our greatest blessing!",
+    "image": "assets/data/photos/timeline/4.JPG",
     "category": "timeline"
   },
   {
     "id": 5,
-    "title": "Achievements",
-    "date": "June 2025",
-    "subtitle": "Milestones unlocked",
-    "description": "Reached product-market fit indicators, exceeded engagement goals, and received recognition across the industry.",
-    "image": "https://picsum.photos/id/1056/1200/700",
-    "category": "achievement"
+    "title": "Five Years Old",
+    "date": "Age 5",
+    "subtitle": "Half a decade of love",
+    "description": "Five wonderful years! Our Manvith is now a big boy/girl with dreams, dreams, and more dreams. You've become more independent, more thoughtful, and even more special. Every day, we witness your beautiful spirit and incredible growth. We are so proud of the person you are becoming!",
+    "image": "assets/data/photos/timeline/5.JPG",
+    "category": "timeline"
+  },
+  {
+    "id": 6,
+    "title": "Six Years Old",
+    "date": "Age 6",
+    "subtitle": "Adventure and wonder",
+    "description": "Six years of pure joy and unconditional love! Our dear Manvith, you continue to amaze us with your cleverness, kindness, and infectious enthusiasm. Starting school, making new friends, and taking on new challenges – we are right here cheering you on. You make us so very proud!",
+    "image": "assets/data/photos/timeline/6.JPG",
+    "category": "timeline"
+  },
+  {
+    "id": 7,
+    "title": "Eight Years Old",
+    "date": "Age 8",
+    "subtitle": "Growing wiser and stronger",
+    "description": "Eight beautiful years have shaped our Manvith into such a remarkable young person! Your wisdom beyond your years, your compassion for others, and your determination inspire us daily. We celebrate not just your birthday, but every moment of growth and every victory – big or small. You are loved beyond measure!",
+    "image": "assets/data/photos/timeline/8.jpg",
+    "category": "timeline"
+  },
+  {
+    "id": 8,
+    "title": "Nine Years Old",
+    "date": "Age 9",
+    "subtitle": "A young person of character",
+    "description": "Nine years of watching you blossom into such a thoughtful and talented individual! Manvith, you bring such warmth and light to our family. Your passions, your humor, and your caring nature make us incredibly proud parents. Thank you for being the wonderful person you are every single day!",
+    "image": "assets/data/photos/timeline/9.jpg",
+    "category": "timeline"
+  },
+  {
+    "id": 9,
+    "title": "Tenth Birthday - A Special Milestone",
+    "date": "Age 10",
+    "subtitle": "A decade of love",
+    "description": "Ten years! A whole decade of memories, laughter, tears, and love. Our precious Manvith, you've grown into such an amazing young person – intelligent, compassionate, and full of potential. As you step into double digits, know that we believe in you completely. Your journey is just beginning, and we can't wait to see all the wonderful things you'll accomplish!",
+    "image": "assets/data/photos/timeline/10.jpg",
+    "category": "timeline"
+  },
+  {
+    "id": 10,
+    "title": "Eleven Years Old",
+    "date": "Age 11",
+    "subtitle": "Teen years approach with grace",
+    "description": "Eleven wonderful years of love, growth, and endless memories! Our Manvith, you are blossoming into such a remarkable young person. Your intelligence, creativity, and kindness continue to inspire us every single day. As you journey toward your teenage years, we celebrate the unique individual you are and can't wait to see the dreams you chase. You are cherished beyond words!",
+    "image": "assets/data/photos/timeline/11.2.jpeg",
+    "category": "timeline"
   }
 ]
