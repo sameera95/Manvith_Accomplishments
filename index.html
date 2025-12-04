@@ -32,10 +32,22 @@
   <main class="timeline-wrap">
     <!-- Video banner replaces the welcome section. Autoplays muted and loops. -->
     <section class="video-banner">
-      <video class="banner-video" autoplay loop playsinline preload="auto" title="Manvith 10th Birthday">
+      <video id="banner-video" class="banner-video" autoplay muted loop playsinline preload="auto" title="Manvith 10th Birthday">
         <source src="assets/data/video/Manvith10thBday.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
+      <div class="play-button-overlay" id="play-overlay">
+        <button class="play-button" id="play-btn" aria-label="Toggle video sound" title="Click to unmute">
+          <!-- Unmute/speaker icon (shown when muted) -->
+          <svg id="unmute-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="display:block">
+            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.26 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+          </svg>
+          <!-- Mute/speaker off icon (shown when unmuted) -->
+          <svg id="mute-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="display:none">
+            <path d="M16.6915026,12.4744748 L21.3818502,7.80425578 C21.8115714,7.38094413 22.0348437,6.75640525 21.9862775,6.16905899 C21.9376879,5.58171274 21.6229026,5.06417174 21.1272231,4.80571081 L20.4450327,4.13395558 C20.0271257,3.95484341 19.5411163,3.99596572 19.1694524,4.25139053 L3.29696786,16.8831967 C2.87902944,17.1604012 2.75925201,17.7088744 3.01946707,18.1272231 L3.68092131,18.7886773 C4.13533922,19.3219826 4.88608044,19.4660531 5.46242017,19.1272231 L7,17.5874949 L7,19 C7,20.1045695 7.8954305,21 9,21 L15,21 C16.1045695,21 17,20.1045695 17,19 L17,11 C17,10.7637469 16.9559325,10.5348219 16.8784503,10.3205428 L16.6915026,12.4744748 Z M3,9 L3,15 L7,15 L12,20 L12,4 L7,9 L3,9 Z"/>
+          </svg>
+        </button>
+      </div>
     </section>
   </main>
 
@@ -43,6 +55,44 @@
     <div style="max-width:1100px;margin:40px auto;padding:20px;text-align:center;color:var(--muted)">Created by parents</div>
   </footer>
 
-  <!-- landing page doesn't need the timeline script -->
+  <!-- Video sound control script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', ()=>{
+      const video = document.getElementById('banner-video');
+      const playBtn = document.getElementById('play-btn');
+      const unmuteIcon = document.getElementById('unmute-icon');
+      const muteIcon = document.getElementById('mute-icon');
+
+      if(!playBtn || !video) return;
+
+      function updateIcon(){
+        if(video.muted){
+          unmuteIcon.style.display = 'block';
+          muteIcon.style.display = 'none';
+          playBtn.title = 'Click to unmute';
+        } else {
+          unmuteIcon.style.display = 'none';
+          muteIcon.style.display = 'block';
+          playBtn.title = 'Click to mute';
+        }
+      }
+
+      playBtn.addEventListener('click', (e)=>{
+        e.stopPropagation();
+        video.muted = !video.muted;
+        video.play();
+        updateIcon();
+      });
+
+      // Also allow clicking the video to toggle mute
+      video.addEventListener('click', ()=>{
+        video.muted = !video.muted;
+        updateIcon();
+      });
+
+      // Initialize icon state
+      updateIcon();
+    });
+  </script>
 </body>
 </html>

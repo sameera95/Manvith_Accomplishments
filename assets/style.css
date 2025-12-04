@@ -64,3 +64,42 @@ body{
   .video-banner iframe,
   .video-banner video{width:200vw;height:200vw}
 }
+
+/* Play button overlay for video sound control */
+.play-button-overlay{
+  position:absolute;
+  bottom:16px;
+  right:16px;
+  z-index:10;
+  cursor:pointer;
+}
+.play-button{
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  background:rgba(255,255,255,0.9);
+  border:none;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 4px 12px rgba(0,0,0,0.2);
+  transition:all 0.3s ease;
+}
+.play-button:hover{
+  background:#fff;
+  transform:scale(1.08);
+  box-shadow:0 6px 16px rgba(0,0,0,0.3);
+}
+.play-button svg{
+  width:28px;
+  height:28px;
+  fill:#0f6cf2;
+}
+.play-button.hidden{
+  display:none;
+}
+@media(max-width:900px){
+  .play-button{width:48px;height:48px}
+  .play-button svg{width:24px;height:24px}
+  .play-button-overlay{bottom:12px;right:12px}
+}
