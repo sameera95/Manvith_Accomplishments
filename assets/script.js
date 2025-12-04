@@ -29,9 +29,10 @@ function renderTimeline(sections){
     const item = document.createElement('div');
     item.className = 'item '+side;
     item.innerHTML = `
-      <div class="dot" aria-hidden="true"></div>
       <div class="card">
-        <div class="media" style="background-image:url('${s.image}')" role="img" aria-label="${escapeHtml(s.title)} image"></div>
+        <div class="media" role="img" aria-label="${escapeHtml(s.title)} image">
+          <img src="${s.image}" alt="${escapeHtml(s.title)}" />
+        </div>
         <div class="content">
           <div class="meta">${escapeHtml(s.date)}</div>
           <h3>${escapeHtml(s.title)}</h3>

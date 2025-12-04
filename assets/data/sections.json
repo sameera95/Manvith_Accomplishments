@@ -40,7 +40,7 @@
     "title": "Five Years Old",
     "date": "Age 5",
     "subtitle": "Half a decade of love",
-    "description": "Five wonderful years! Our Manvith is now a big boy/girl with dreams, dreams, and more dreams. You've become more independent, more thoughtful, and even more special. Every day, we witness your beautiful spirit and incredible growth. We are so proud of the person you are becoming!",
+    "description": "Five wonderful years! Our Manvith is now a big boy with dreams, dreams, and more dreams. You've become more independent, more thoughtful, and even more special. Every day, we witness your beautiful spirit and incredible growth. We are so proud of the person you are becoming!",
     "image": "assets/data/photos/timeline/5.JPG",
     "category": "timeline"
   },
@@ -55,6 +55,15 @@
   },
   {
     "id": 7,
+    "title": "Seven Years Old",
+    "date": "Age 7",
+    "subtitle": "Curious and confident",
+    "description": "Seven delightful years of wonder! Our little explorer at seven is full of curiosity and confidence. Whether it was learning new games, asking thoughtful questions, or sharing tender hugs, each moment has warmed our hearts. Keep shining, dear one — your courage and smile brighten every day.",
+    "image": "assets/data/photos/timeline/7.1.JPG",
+    "category": "timeline"
+  },
+  {
+    "id": 8,
     "title": "Eight Years Old",
     "date": "Age 8",
     "subtitle": "Growing wiser and stronger",
@@ -63,7 +72,7 @@
     "category": "timeline"
   },
   {
-    "id": 8,
+    "id": 9,
     "title": "Nine Years Old",
     "date": "Age 9",
     "subtitle": "A young person of character",
@@ -72,7 +81,7 @@
     "category": "timeline"
   },
   {
-    "id": 9,
+    "id": 10,
     "title": "Tenth Birthday - A Special Milestone",
     "date": "Age 10",
     "subtitle": "A decade of love",
@@ -81,12 +90,39 @@
     "category": "timeline"
   },
   {
-    "id": 10,
+    "id": 11,
     "title": "Eleven Years Old",
     "date": "Age 11",
     "subtitle": "Teen years approach with grace",
     "description": "Eleven wonderful years of love, growth, and endless memories! Our Manvith, you are blossoming into such a remarkable young person. Your intelligence, creativity, and kindness continue to inspire us every single day. As you journey toward your teenage years, we celebrate the unique individual you are and can't wait to see the dreams you chase. You are cherished beyond words!",
     "image": "assets/data/photos/timeline/11.2.jpeg",
     "category": "timeline"
+  },
+  {
+    "id": 12,
+    "title": "U11 Cricket Champion",
+    "date": "U11 Tournament",
+    "subtitle": "Champion on the pitch",
+    "description": "From the very first practice to lifting the trophy, our hearts swelled with pride watching you play with courage, teamwork, and spirit. Winning the U11 cricket tournament is a testament to your hard work, discipline, and love for the game. Congratulations, our champion — your determination and smile light up our world!",
+    "image": "assets/data/photos/achievements/cricket.jpg",
+    "category": "achievement"
+  },
+  {
+    "id": 13,
+    "title": "Chess Tournament Champion",
+    "date": "Local Chess Tournament",
+    "subtitle": "Strategic mind at play",
+    "description": "Watching you concentrate over the chessboard and outthink your opponents filled us with such pride. Winning the chess tournament showed your patience, focus, and cleverness. Well played, our little strategist — your thoughtful moves and calm spirit amaze us every day!",
+    "image": "assets/data/photos/achievements/chess.JPG",
+    "category": "achievement"
+  },
+  {
+    "id": 14,
+    "title": "MathMasters Winner",
+    "date": "MathMasters Competition",
+    "subtitle": "A brilliant mind",
+    "description": "Your knack for numbers and problem solving lit up the competition. Winning MathMasters is a beautiful reward for your curiosity, hard work, and love for learning. We're so proud of you, our bright mathematician — keep solving, exploring, and shining!",
+    "image": "assets/data/photos/achievements/math.jpg",
+    "category": "achievement"
   }
 ]
